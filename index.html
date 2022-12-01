@@ -17,7 +17,7 @@
           <a href="/" class="logo-web">Web<span class="logo-studio">Studio</span></a>
     
           <ul class="navigation">
-            <li class="navigation-item"> <a href="#" class="item">Студія</a></li>
+            <li class="navigation-item index-main"> <a href="#" class="item">Студія</a></li>
             <li class="navigation-item"><a href="./portfolio.html" class="item">Портфоліо</a></li>
             <li class="navigation-item"><a href="#" class="item">Контакти</a></li>
           </ul>
@@ -44,7 +44,7 @@
     <section class="hero">
           <div class="container hero-container">
           <h1 class="slogan">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="main-button">Замовити послугу</button>
+          <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
      <!-------------------------PREFERENS----------------->
@@ -345,9 +345,10 @@
             </ul>
             </div>
        </section>
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="modal-close"> <svg class="icon icon-closee" width="30px" height="30px"><use href="./images/icons.svg#icon-closee"></use></svg>
+    <button class="modal-close"data-modal-close > 
+      <svg class="icon icon-closee" width="30px" height="30px"><use href="./images/icons.svg#icon-closee"></use></svg>
     </button>
   </div>
 </div>
@@ -398,5 +399,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
